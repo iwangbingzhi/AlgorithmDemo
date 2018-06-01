@@ -78,11 +78,8 @@ public class Test1 {
             return i;
         }
 
-        public void charAtDemo(){
-            String s = "hello";
-            System.out.println(s.charAt(2));
-        }
 
+        //给定一个字符串，反转之后返回
         public String reverseString(String s) {
           StringBuilder sb = new StringBuilder(s);
           String rs = sb.reverse().toString();
