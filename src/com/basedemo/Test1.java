@@ -1,7 +1,6 @@
 package com.basedemo;
 
-import java.util.Arrays;
-import java.util.HashMap;
+
 import java.util.Scanner;
 
 public class Test1 {
@@ -11,8 +10,8 @@ public class Test1 {
         /* String j = "Aa";
         String s = "AAAaABBBBB";
        int b = test1.diamond("Aa","AAAaABBBBB");
-        System.out.println("您一共有："+b+"颗宝石");*/
-   /*    String s = "hello";
+       System.out.println("您一共有："+b+"颗宝石");*/
+   /*  String s = "hello";
        String reverses = test1.reverseString(s);
        System.out.println(reverses);*/
         String J = "Aa";
@@ -22,19 +21,6 @@ public class Test1 {
 
 
     }
-        public int[] twoSum(int[] nums, int target) {
-            HashMap<Integer, Integer> m = new HashMap<Integer, Integer>();
-            int[] res = new int[2];
-            for (int i = 0; i < nums.length; ++i) {
-                if (m.containsKey(target - nums[i])) {
-                    res[0] = i;
-                    res[1] = m.get(target - nums[i]);
-                    break;
-                }
-                m.put(nums[i],i);
-            }
-            return res;
-        }
         //给定数组中的两个位置，判断两个数在数组中位置
         public int[] twoSum2(int[] nums,int target) throws Exception {
             int[] result = {0,0};
@@ -78,8 +64,7 @@ public class Test1 {
             return i;
         }
 
-
-        //给定一个字符串，反转之后返回
+        //给定一个字符串，反转之后返回反转的字符串
         public String reverseString(String s) {
           StringBuilder sb = new StringBuilder(s);
           String rs = sb.reverse().toString();
