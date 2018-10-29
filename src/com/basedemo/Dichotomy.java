@@ -1,27 +1,37 @@
 package com.basedemo;
 
+/*
+二分法查找元素
+*/
 public class Dichotomy {
     public static void main(String[] args) {
-        int[] list = {1,3,5,7,9};
+        int[] list = {1, 3, 5, 7, 9, 10, 15, 18, 20};
         Dichotomy d = new Dichotomy();
-        int a = d.binary_search(list,1);
+        int a = d.binary_search(list, 20);
         System.out.println(a);
     }
-    public int binary_search(int[] list,int item){
+
+    public int binary_search(int[] list, int item) {
         int low = 0;
         int high = list.length - 1;
-        while(low<=high){
-            int mid = (low+high)/2;
+        while (low <= high) {
+            int mid = (low + high) / 2;
             int guess = list[mid];
-            if (guess == item){
+            if (guess == item) {
                 return mid;
             }
-            if (guess>item){
-                high = mid-1;
-            }else {
-                low = mid+1;
+            //猜的数字大了
+            if (guess > item) {
+                high = mid - 1;
+            } else {
+                //猜的数字小了
+                low = mid + 1;
             }
         }
         return -1;
     }
+
 }
+
+
+
