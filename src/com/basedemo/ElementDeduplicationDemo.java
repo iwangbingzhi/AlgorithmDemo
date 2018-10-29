@@ -4,6 +4,7 @@ import java.util.Arrays;
 /**
  * @Title: ElementDeduplicationDemo.java
  * @Description:元素去重问题，使用左右下标(l,r)移动的方式来判断重复的元素 总时间O(nlogn)
+ * 先进行排序预处理
  * @Author 王炳智
  */
 public class ElementDeduplicationDemo {
