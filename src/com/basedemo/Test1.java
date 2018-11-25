@@ -1,6 +1,8 @@
 package com.basedemo;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Test1 {
@@ -11,15 +13,15 @@ public class Test1 {
         String s = "AAAaABBBBB";
        int b = test1.diamond("Aa","AAAaABBBBB");
        System.out.println("您一共有："+b+"颗宝石");*/
-       String s = "hello";
-       String reverses = test1.reverseString2(s);
-       System.out.println(reverses);
+
+//       String s = "hello";
+//       String reverses = test1.reverseString2(s);
+//       System.out.println(reverses);
+
         /*String J = "AB";
         String S = "AAAAAaBBBB";
         int i = test1.diamond(J,S);
         System.out.println(i);*/
-
-
 
     }
         //给定数组中的两个位置，判断两个数在数组中位置
