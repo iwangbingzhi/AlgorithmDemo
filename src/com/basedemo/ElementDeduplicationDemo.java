@@ -13,18 +13,15 @@ public class ElementDeduplicationDemo {
         int a[] = {7,7,6,2,9,9,3,9};
         Arrays.sort(a);
         int b[] = {7,9,3,9,2,1,7,2};
+        paixun2(b);
 
-
-        ElementDeduplicationDemo ed = new ElementDeduplicationDemo();
-        ed.paixun2(b);
-
-        Set<Integer> setb = new HashSet<Integer>();
+     /*   Set<Integer> setb = new HashSet<Integer>();
         for (int i = 0; i < b.length; i++) {
             setb.add(b[i]);
         }
-        System.out.println(setb);
+        System.out.println(setb);*/
     }
-    public void paixun2(int[] b){
+    public static void paixun2(int[] b){
         for (int i = 0; i < b.length-1; i++) {
             for (int j = 0; j <b.length-1-i ; j++) {
                 if (b[j]<b[j+1]){
@@ -39,7 +36,7 @@ public class ElementDeduplicationDemo {
 
 
     //控制左下标l  O(n)
-    public void ElementDeduplication1(int a[]) {
+    public static void ElementDeduplication1(int a[]) {
         int l = 0;
         int r;
         while (l < a.length) {
@@ -56,7 +53,7 @@ public class ElementDeduplicationDemo {
     }
 
     //控制左下标l  O(n)
-    public void ElementDeduplication2(int a[]) {
+    public static void ElementDeduplication2(int a[]) {
         int l, r;
         for (l = 0; l < a.length; l = r) {
             for (r = l + 1; r < a.length; r++) {
@@ -76,7 +73,7 @@ public class ElementDeduplicationDemo {
     *上述两种算法都要进行两次小于a.length的判断，增加了计算成本
     * 右下标的控制  该方法只需要进行一次a.length的判断  O(n)
     * */
-    public void ElementDeduplication3(int a[]) {
+    public static void ElementDeduplication3(int a[]) {
         int l = 0;
         int r;
         for (r=0; r <a.length; r++) {

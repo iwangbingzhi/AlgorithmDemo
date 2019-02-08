@@ -4,13 +4,12 @@ public class SelectionSort {
     public static void main(String[] args) {
         int a[]={4,6,2,1};
 
-        SelectionSort s = new SelectionSort();
-        s.selectionSortTest(a);
+        selectionSortTest(a);
         for (int i: a) {
             System.out.print(i+" ");
         }
     }
-    public void selectionSortTest(int a[]){
+    public static void selectionSortTest(int a[]){
         for(int i = 0; i < a.length -1; i++) {   //比n-1趟
             int k = i;
             for (int j = k+1; j < a.length; j++) {
